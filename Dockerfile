@@ -4,6 +4,7 @@ RUN pip install -i https://mirrors.aliyun.com/pypi/simple pipenv
 ENV PATH=$PATH:/home/jovyan/.local/bin
 
 USER root
+RUN conda config --set auto_activate_base false
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 RUN apt update -y && apt install -y net-tools
