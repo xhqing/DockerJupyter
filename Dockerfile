@@ -1,6 +1,6 @@
 FROM docker.io/python:3.9.12
 
-RUN pip install --user --no-cache-dir --trusted-host mirrors.aliyun.com -i https://mirrors.aliyun.com/pypi/simple jupyter lab
+RUN pip install --user --no-cache-dir --trusted-host mirrors.aliyun.com -i https://mirrors.aliyun.com/pypi/simple jupyterlab
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
 RUN apt update -y && apt install -y net-tools
