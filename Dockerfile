@@ -1,6 +1,6 @@
 FROM jupyter/datascience-notebook
 
-RUN pip install -i https://mirrors.aliyun.com/pypi/simple pipenv
+# RUN pip install -i https://mirrors.aliyun.com/pypi/simple pipenv
 ENV PATH=$PATH:/home/jovyan/.local/bin
 
 USER root
