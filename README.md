@@ -1,4 +1,4 @@
-# JupyterLab-Docker
+# DockerJupyter
 
 ```sh
 docker build --no-cache -t jupyterlab .
