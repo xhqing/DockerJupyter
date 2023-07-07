@@ -1,8 +1,8 @@
-# DockerJupyterLab
+# DockerJupyter
 
-## JupyterLab Docker Image Building
+## Jupyter Docker Image Building
 
-Building JupyterLab Docker Image Based on `Dockerfile`.
+Building Jupyter Docker Image Based on `Dockerfile`.
 ```sh
 docker build --no-cache -t IMAGE_NAME .
 docker run -u root -d -p SERVER_PORT:8888 -v SERVER_DIR_ABSPATH:/home/jovyan/work --name="CONTAINER_NAME" IMAGE_NAME
