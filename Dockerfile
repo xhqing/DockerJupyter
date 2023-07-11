@@ -15,3 +15,6 @@ RUN echo "${TIME_ZONE}" > /etc/timezone && ln -sf /usr/share/zoneinfo/${TIME_ZON
 RUN find . -name "*.pyc" -delete
 
 CMD ["jupyter", "lab", "--allow-root"]
+
+
+
